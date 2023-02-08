@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts\inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts\inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts\inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
+  background-color: #feafc3;
+}
+
+.navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+  text-align: center;
+}
+
+.navigation-contacts-phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.product-icecream-item,
+.delivery-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.description-icecream {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.promo-title,
+.hit-icecream-title,
+.about-production-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.promo-title-icecream,
+.news-blog {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-item {
+  background-color: #ff7799;
+}
+
+.description-promo {
+  font-size: 16px;
+}
+
+.button {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hit-icecream-item {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.hit-icecream-link,
+.hit-icecream-price,
+.contacts-address-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.description-icecream,
+.about-production-item {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+.news-blog {
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.news-letter,
+.order-text,
+.address-text {
+  font-size: 16px;
+  color: #565c66;
+}
+
+.newsletter-button,
+.address-button,
+.contacts-buton {
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  border: 4px solid;
+  border-radius: 26px;
+  padding: 12px 32px 12px 32px;
+}
+
+.appointment-form {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.time-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+.info-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.link-bold {
+  font-weight: 700;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 16px;
+}
