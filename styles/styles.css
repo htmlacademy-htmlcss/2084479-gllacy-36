@@ -43,6 +43,20 @@ body {
   padding: 12px 32px;
 }
 
+/* Раскомментировать после добавления иконок.
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
 .navigation-list {
   list-style: none;
 }
@@ -75,6 +89,7 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+
 .product-icecream-slider {
   list-style: none;
 }
@@ -85,6 +100,7 @@ body {
   line-height: 20px;
   color: #2d3440;
 }
+
 .promo-list {
   list-style: none;
 }
@@ -113,16 +129,16 @@ body {
   font-size: 16px;
 }
 
-.hit-icecream-list {
+.products-list {
   list-style: none;
 }
 
-.hit-icecream-item {
+.product-card {
   background-color: #fcfcfc;
   text-align: center;
 }
 
-.hit-icecream-link,
+.product-card-link,
 .hit-icecream-price,
 .contacts-address-text {
   font-weight: 700;
@@ -140,7 +156,7 @@ body {
 }
 
 .about-production {
-  background-image: url("..\\images\\backgrounds\\ceo.jpg");
+  background-image: url("../images/backgrounds/ceo.jpg");
   background-color: #fcfcfc;
   background-repeat: no-repeat;
 }
@@ -150,7 +166,7 @@ body {
 }
 
 .blog {
-  background-image: url("..\\images\\backgrounds\\blog.jpg");
+  background-image: url("../images/backgrounds/blog.jpg");
   background-color: #fcfcfc;
   background-repeat: no-repeat;
 }
@@ -174,7 +190,7 @@ body {
 }
 
 .news-letter {
-  background-image: url("..\\images\\backgrounds\\subscription.png");
+  background-image: url("../images/backgrounds/subscription.png");
   background-color: #fcfcfc;
   background-repeat: no-repeat;
 }
@@ -187,13 +203,13 @@ body {
 }
 
 .delivery {
-  background-image: url("..\\images\\backgrounds\\delivery.jpg");
+  background-image: url("../images/backgrounds/delivery.jpg");
   background-color: #fcfcfc;
   background-repeat: no-repeat;
 }
 
 .footer-contacts {
-  background-image: url("..\\images\\backgrounds\\feedback.jpg");
+  background-image: url("../images/backgrounds/feedback.jpg");
   background-color: #fcfcfc;
   background-repeat: no-repeat;
 }
@@ -238,10 +254,56 @@ body {
 }
 
 .htmlacademy-link {
-color: #2D3440;
+  color: #2d3440;
 }
 
 .footer-text {
   font-size: 12px;
   line-height: 16px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.catalog-page-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.pagination {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.pagination-link {
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.footer-social-list {
+  list-style: none;
 }
