@@ -30,6 +30,23 @@ body {
   background-color: #feafc3;
 }
 
+.button {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  background: #fcfcfc;
+  border: 4px solid;
+  border-radius: 26px;
+  padding: 12px 32px;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
 .navigation-link {
   font-size: 16px;
   line-height: 20px;
@@ -58,12 +75,18 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+.product-icecream-slider {
+  list-style: none;
+}
 
 .slider-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+}
+.promo-list {
+  list-style: none;
 }
 
 .promo-title,
@@ -90,13 +113,8 @@ body {
   font-size: 16px;
 }
 
-.button {
-  color: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  text-align: center;
+.hit-icecream-list {
+  list-style: none;
 }
 
 .hit-icecream-item {
@@ -121,6 +139,22 @@ body {
   color: #565c66;
 }
 
+.about-production {
+  background-image: url("..\\images\\backgrounds\\ceo.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+}
+
+.about-production-list {
+  list-style: none;
+}
+
+.blog {
+  background-image: url("..\\images\\backgrounds\\blog.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+}
+
 .about-text {
   font-size: 16px;
   line-height: 20px;
@@ -139,14 +173,29 @@ body {
   color: #565c66;
 }
 
+.news-letter {
+  background-image: url("..\\images\\backgrounds\\subscription.png");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+}
+
 .newsletter-button,
 .address-button,
 .contacts-buton {
   color: #fcfcfc;
   background-color: #ff2f64;
-  border: 4px solid;
-  border-radius: 26px;
-  padding: 12px 32px 12px 32px;
+}
+
+.delivery {
+  background-image: url("..\\images\\backgrounds\\delivery.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts {
+  background-image: url("..\\images\\backgrounds\\feedback.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
 }
 
 .appointment-form {
@@ -182,6 +231,14 @@ body {
 
 .link-bold {
   font-weight: 700;
+}
+
+.footer-info-list {
+  list-style: none;
+}
+
+.htmlacademy-link {
+color: #2D3440;
 }
 
 .footer-text {
