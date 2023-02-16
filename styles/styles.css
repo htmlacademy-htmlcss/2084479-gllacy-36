@@ -27,8 +27,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 80px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -37,6 +35,8 @@ body {
   line-height: 22px;
   color: #2d3440;
   background-color: #feafc3;
+  margin: 0;
+  padding: 80px;
 }
 
 .main-container {
@@ -274,7 +274,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   width: 270px;
-  height: 332px;
+  height: 330px;
   margin-bottom: 40px;
 }
 
@@ -304,8 +304,7 @@ body {
   line-height: 22px;
   color: #565c66;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 16px;
+  padding: 8px 40px 16px;
   margin: 0;
 }
 
@@ -397,7 +396,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 570px;
-  height: 224;
+  height: 224px;
 }
 
 .about-text-letter {
@@ -630,7 +629,7 @@ body {
 }
 
 .price {
-  padding: 0 auto;
+  padding: 0;
   width: 196px;
   padding-right: 24px;
 }
