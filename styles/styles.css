@@ -36,7 +36,7 @@ body {
   color: #2d3440;
   background-color: #feafc3;
   margin: 0;
-  padding: 80px;
+  padding: 0;
 }
 
 .main-container {
@@ -57,9 +57,7 @@ body {
 
 .page-container {
   width: 1170px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* Button */
@@ -73,11 +71,17 @@ body {
   text-align: center;
   background: #fcfcfc;
   border: 4px solid;
+  border-color: rgb(255, 47, 100, 0.3);
   border-radius: 26px;
   padding: 12px 32px;
+  display: inline-block;
 }
 
-.newsletter-button,
+.newsletter-button {
+  color: #fcfcfc;
+  background-color: #ff2f64;
+}
+
 .address-button {
   color: #fcfcfc;
   background-color: #ff2f64;
@@ -111,11 +115,10 @@ body {
 
 .navigation-list {
   display: flex;
-  justify-content: flex-start;
   padding: 0;
   margin: 0;
+  margin-top: 40px;
   list-style: none;
-  width: 520px;
 }
 
 .navigation-user {
@@ -123,20 +126,24 @@ body {
   margin-left: auto;
 }
 
-.navigation-item {
-  margin: 8px 16px;
-}
-
-.navigation-item-user {
-  margin: 6px 16px;
-}
-
 .navigation-link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
-  text-align: center;
+  padding: 8px 16px;
+}
+
+.catalog-list {
+  position: relative;
+  margin-right: 23px;
+}
+
+.catalog-list::after {
+  content: url("../images/icons/arrows/arrow-down.svg");
+  position: absolute;
+  top: 10px;
+  margin-left: 7px;
 }
 
 .navigation-contacts-phone {
@@ -145,36 +152,105 @@ body {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+  margin-right: 81px;
+}
+.search {
+  position: relative;
+}
+
+
+.quantity {
+  font-size: 14px;
+  text-align: right;
+  position: relative;
+}
+
+.login-user {
+  margin-right: 16px;
+}
+
+.quantity::before {
+  position: absolute;
+  content: url("../images/icons/card-black.svg");
 }
 
 /* Slider */
+.product {
+}
 
-.product-icecream-slider {
+.product-slider {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.product-icecream-title {
-  padding: 136px 630px 24px 70px;
+.product-item-active {
+  display: grid;
+  grid-template-columns: 470px 330px;
+}
+
+.product-wrapper {
+  display: none;
+}
+
+.product-item-active .product-wrapper {
+  display: block;
+}
+
+.product-img-wrapper {
+  width: 100px;
+  height: 150px;
+  position: relative;
+}
+
+.product-img-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: brown;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.product-item-active .product-img-wrapper {
+  width: 327px;
+  height: 507px;
+}
+
+.product-item-active .product-img-wrapper::before {
+}
+
+.slider-image {
+  width: 66px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.product-title {
+  padding: 132px 630px 24px 70px;
   margin: 0;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
   width: 470px;
-  height: 92px;
 }
 
 .description-icecream-slider {
-  padding: 0 631px 48px 70px;
+  padding: 0 0 44px 70px;
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  width: 429px;
-  height: 72px;
+  width: 430px;
 }
+
 .footer-slider {
   display: flex;
   justify-content: space-between;
@@ -186,6 +262,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+  margin-left: 66px;
 }
 
 .slider-pagination {
@@ -195,9 +272,48 @@ body {
 }
 
 .main-social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80px;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.button-tg {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/social/telegram.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #feafc3;
+}
+
+.button-vk {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/social/vk.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #feafc3;
+}
+
+.button-yt {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/social/youtube.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #feafc3;
 }
 
 /* Promo */
@@ -208,7 +324,6 @@ body {
   line-height: 46px;
   text-align: center;
   width: 434px;
-  height: 92px;
   margin: 0 auto;
   padding-bottom: 55px;
 }
@@ -223,9 +338,21 @@ body {
 
 .promo-item {
   width: 570px;
-  height: 268px;
+  min-height: 268px;
   background-color: #ff7799;
   border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 37px 212px 31px 36px;
+  box-sizing: border-box;
+}
+
+.promo-item-raspberries {
+  background-image: url("../images/image-ice/raspberries-photo.png");
+}
+
+.promo-item-marshmallow {
+  background-image: url("../images/image-ice/marshmallow-photo.png");
 }
 
 .promo-title-icecream {
@@ -233,19 +360,20 @@ body {
   font-size: 24px;
   line-height: 30px;
   padding: 0;
-  margin: 36px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .description-promo {
   width: 304px;
-  height: 66px;
   font-size: 16px;
-  margin: 28px 36px;
+  margin: 0;
   padding: 0;
+  margin-bottom: 24px;
 }
 
 .button-promo {
-  margin: 36px;
+  margin-left: -4px;
 }
 
 /* Hit */
@@ -255,7 +383,6 @@ body {
   font-size: 32px;
   line-height: 46px;
   width: 527px;
-  height: 92px;
   text-align: center;
   padding: 0;
   margin: 80px auto 56px;
@@ -271,11 +398,21 @@ body {
 }
 
 .product-card {
-  background-color: #fcfcfc;
+  max-width: 270px;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 52px);
   border-radius: 8px;
-  width: 270px;
-  height: 330px;
-  margin-bottom: 40px;
+  background-color: #fcfcfc;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .product-card-link {
@@ -285,10 +422,14 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #2d3440;
+  position: relative;
+  z-index: 10;
 }
 
 .product-card-image {
   padding: 0 51px;
+  border-radius: 50%;
+  margin-bottom: 12px;
 }
 
 .product-card-title {
@@ -306,6 +447,8 @@ body {
   text-align: center;
   padding: 8px 40px 16px;
   margin: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .product-card-price {
@@ -313,17 +456,35 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #2d3440;
-  padding: 0 40px;
+  padding-left: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.button-card {
+  position: relative;
+  z-index: 10;
+}
+
+.button-card::before {
+  background-color: #ff2f64;
+  background-image: url("../images/icons/card-white.svg");
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  z-index: 20;
 }
 
 /* About */
 
 .about-production {
-  margin: 80px 0;
-  height: 480px;
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
   background-image: url("../images/backgrounds/ceo.jpg");
   background-color: #fcfcfc;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border-radius: 16px;
 }
 
@@ -360,7 +521,6 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 570px;
-  height: 224px;
 }
 
 .about-text {
@@ -368,16 +528,15 @@ body {
   line-height: 20px;
   color: #565c66;
   padding: 0;
-  margin-top: 32px;
-  margin-bottom: 12px;
+  margin: 0;
+  margin-top: 33px;
   margin-left: 32px;
   width: 200px;
 }
 
 .blog-title {
   padding: 0;
-  margin-left: 32px;
-  width: 310px;
+  margin: 12px 235px 67px 32px;
 }
 
 .news-blog {
@@ -396,7 +555,17 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 570px;
-  height: 224px;
+  position: relative;
+}
+
+.news-letter::before {
+  content: "";
+  position: absolute;
+  background-color: #fcfcfc;
+  border-radius: 16px;
+  width: 100%;
+  height: calc(100% - 6px);
+  z-index: 1;
 }
 
 .about-text-letter {
@@ -406,7 +575,13 @@ body {
   font-size: 16px;
   color: #565c66;
   width: 510px;
+  z-index: 100;
 }
+
+.newsletter-form {
+  z-index: 100;
+}
+
 .field {
   width: 332px;
   height: 48px;
@@ -428,7 +603,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 1170px;
-  height: 534px;
+  min-height: 534px;
   margin: 80px 0;
 }
 
@@ -463,21 +638,33 @@ body {
 
 /* Contacts */
 
-.contacts-info {
-  width: 350px;
-  padding: 104px;
-  padding-bottom: 32px;
-  font-style: normal;
-}
-
 .adress-contacts {
-  background-image: url("../images/backgrounds/feedback.jpg");
   background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/feedback.jpg");
   background-repeat: no-repeat;
   margin: 80px 0;
   border-radius: 16px;
   width: 1170px;
-  height: 492px;
+  position: relative;
+}
+
+.adress-contacts::before {
+  content: "";
+  position: absolute;
+  background-color: #fcfcfc;
+  width: 343;
+  height: calc(100% - 64px);
+  border-radius: 8px;
+  margin: 64px;
+  z-index: 10;
+}
+
+.contacts-info {
+  width: 350px;
+  padding: 104px;
+  padding-bottom: 28px;
+  font-style: normal;
+  z-index: 1;
 }
 
 .contacts-address-text {
@@ -517,21 +704,25 @@ body {
 
 .contacts-buton {
   color: #fcfcfc;
+  border-color: rgb(252, 252, 252, 0.6);
   background-color: #ff2f64;
   margin-left: 100px;
+  margin-bottom: 100px;
 }
 
 /* Footer */
 
 .page-footer-container {
   display: flex;
-  width: 940px;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .footer-social-list {
+  display: flex;
+  justify-content: space-between;
   margin-left: auto;
-  max-width: 190px;
+  min-width: 104px;
   padding: 0;
   margin-right: 260px;
   list-style: none;
@@ -542,14 +733,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-  width: 360px;
-  height: 50px;
-  margin: 0;
+  min-width: 360px;
+  max-height: 50px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-index {
   margin-left: auto;
-  max-width: 200px;
+  min-width: 200px;
 }
 
 .info-link {
@@ -561,6 +753,15 @@ body {
 
 .link-bold {
   font-weight: 700;
+  position: relative;
+}
+
+.link-bold::before {
+  content: url("../images/icons/heart-fill.svg");
+  margin-top: 2px;
+  padding-right: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 .footer-text {
@@ -655,7 +856,7 @@ body {
   padding: 0;
 }
 
-.fillers  {
+.fillers {
   padding-bottom: 8px;
   width: 610px;
 }
@@ -666,7 +867,6 @@ body {
   line-height: 20px;
   color: #2d3440;
   width: 185px;
-  height: 36px;
   border-radius: 20px;
 }
 
