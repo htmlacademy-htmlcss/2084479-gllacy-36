@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-
+    <link rel="icon" href="../2084479-gllacy-36/images/icons/favicon.svg"> <!-- 32×32 -->
     <link rel="stylesheet" href="styles/styles.css">
 
   </head>
@@ -73,6 +73,15 @@
                 </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
+              <div class="popover popover-search">
+                <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="search"> Поиск </label>
+                  <input class="search-field" placeholder="Поиск по сайту" type="text" name="search" id="search">
+                  <button class="clear-search" type="reset">
+                    <span class="visually-hidden">Очистить поле поиска</span>
+                  </button>
+                </form>
+              </div>
             </li>
 
             <li class="navigation-item">
@@ -82,8 +91,31 @@
                   <path fill-rule="evenodd"
                     d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z"
                     clip-rule="evenodd" />
-                </svg> Вход
-              </a>
+                </svg>
+                Вход </a>
+
+              <div class="popover popover-login">
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <p class="field-group">
+                      <label class="visually-hidden" for="auth-login">Логин</label>
+                      <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
+                        placeholder="email@example.com">
+                    </p>
+                    <p class="field-group">
+                      <label class="visually-hidden" for="auth-password">Пароль</label>
+                      <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                        placeholder="••••••">
+                    </p>
+                    <div class="auth-form-user-options">
+                      <button class="popover-close-button extra-button auth-form-button button" type="submit">Войти</button>
+                      <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                      <a class="auth-form-register" href="#">Регистрация</a>
+                    </div>
+                </div>
+              </div>
+
             </li>
 
             <li class="navigation-item">
@@ -140,7 +172,7 @@
                   </ul>
                 </div>
                 <div class="footer-cart">
-                  <button class="popover-close-button button button-light"> Оформить заказ </button>
+                  <button class="popover-close-button extra-button button"> Оформить заказ </button>
                   <span class="total-card">Итого: 790 ₽ </span>
                 </div>
               </div>
@@ -425,12 +457,13 @@
 
               <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="newsletter-email">Элетронная почта </label>
-                <input class="field-email" placeholder="email@example.com" type="email" name="newsletter-email"
-                  id="newsletter-email" required>
-                <button class="newsletter-button button" type="submit">
+                <input class="field-email field" placeholder="email@example.com" type="email" name="newsletter-email"
+                  id="newsletter-email">
+                <button class="newsletter-button extra-button button" type="submit">
                   Отправить
                 </button>
               </form>
+
             </div>
           </section>
         </div>
@@ -451,7 +484,22 @@
 
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group-delivery appointment-form-date">
-                <label class="form-label" for="appointment-date"> Дата </label>
+                <span class="form-label">
+                  <label class="form-label form-label-icon" for="appointment-date"> Дата </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      </svg>
+                      <svg class="tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date"> Укажите желаемую дату доставки
+                    </span>
+
+                  </span>
+                </span>
                 <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
               </p>
               <p class="field-group-delivery appointment-form-phone">
@@ -460,11 +508,26 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group-delivery appointment-form-address">
-                <label class="form-label" for="appointment-address"> Адрес </label>
+                <span class="form-label">
+                  <label class="form-label form-label-icon" for="appointment-address"> Адрес </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      </svg>
+                      <svg class="tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date"> Введите название улицы, дома и
+                      квартиры </span>
+
+                  </span>
+                </span>
                 <input class="field" type="text" id="appointment-address" name="appointment-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
-              <button class="address-button button" type="submit"> Отправить </button>
+              <button class="address-button extra-button button" type="submit"> Отправить </button>
             </form>
           </div>
         </section>
@@ -483,7 +546,7 @@
               </a>
               <p class="time-text">(с 10 до 20 ежедневно)</p>
             </address>
-            <a class="contacts-buton button" href="#">Форма обратной связи </a>
+            <a class="contacts-button extra-button button" href="#">Форма обратной связи </a>
           </div>
         </section>
       </main>
@@ -552,7 +615,7 @@
       </footer>
 
     </div>
-    <div class="modal-container" >
+    <div class="modal-container modal-container-close">
       <div class="modal modal-feedback">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -571,10 +634,10 @@
             </p>
             <p class="field-group">
               <label class="visually-hidden" for="feedback-form-text"> Форма обратной связи </label>
-              <textarea class="feedback-form-text" id="feedback-form-text" name="feedback-form-text"
+              <textarea class="feedback-form-field feedback-form-text" id="feedback-form-text" name="feedback-form-text"
                 placeholder="В свободной форме"></textarea>
             </p>
-            <button class="modal-button button" type="submit">
+            <button class="modal-button extra-button button" type="submit">
               Отправить
             </button>
           </form>
