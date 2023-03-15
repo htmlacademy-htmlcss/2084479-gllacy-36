@@ -163,7 +163,7 @@ body {
 }
 
 .navigation {
-  padding: 24px 0;
+  padding: 24px 0 23px;
   display: flex;
 }
 
@@ -209,7 +209,7 @@ body {
   position: relative;
 }
 
-.dropdown:focus-within  .dropdown-block {
+.dropdown:focus-within .dropdown-block {
   display: block;
 }
 
@@ -548,7 +548,7 @@ body {
 .footer-slider {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .slider-pagination-button {
@@ -603,7 +603,7 @@ body {
 
 .main-social-item {
   box-sizing: border-box;
-  margin-right: 16px;
+  margin-right: 12px;
   border: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 50%;
 }
@@ -616,7 +616,7 @@ body {
   display: block;
   height: 24px;
   width: 24px;
-
+  border-radius: 50%;
 }
 
 .social-link-tg {
@@ -984,7 +984,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
-  width: 570px;
+  width: 558px;
   padding: 6px;
 }
 
@@ -1564,7 +1564,7 @@ body {
 /* Price */
 
 .price {
-  display:inline-block;
+  display: inline-block;
   margin-right: 24px;
   font-size: 14px;
   line-height: 20px;
@@ -1727,7 +1727,7 @@ body {
 }
 
 .control-input:focus + .control-mark-radio::before {
- background-color: #fcfcfc;
+  background-color: #fcfcfc;
 }
 
 /* Fillers */
@@ -1929,7 +1929,7 @@ body {
 .popover {
   position: absolute;
   top: 10px;
-  right: 16px;
+  right: 0;
   z-index: 10;
   box-sizing: border-box;
   display: none;
@@ -2069,8 +2069,6 @@ body {
 }
 
 .popover-cart {
-  position: absolute;
-  right: -16px;
   width: 441px;
   font-family: "Inter", sans-serif;
   font-style: normal;
