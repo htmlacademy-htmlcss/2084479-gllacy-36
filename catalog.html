@@ -4,13 +4,16 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="icon" href="../2084479-gllacy-36/images/icons/favicon.svg"> <!-- 32×32 -->
+    <link rel="icon" href="images/icons/favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="page-container">
       <header class="catalog-header">
+        <h1 class="visually-hidden">
+          Каталог товаров магазина мороженого Глейси
+        </h1>
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/logo/logo.svg" width="137" height="56" alt="Логотип ГлейсиШоп">
@@ -191,9 +194,7 @@
       </header>
 
       <main class="main-container">
-        <h1 class="visually-hidden">
-          Каталог товаров магазина мороженого Глейси
-        </h1>
+
         <header class="inner-header">
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -212,7 +213,7 @@
           <h2 class="catalog-page-title">Сливочное мороженое</h2>
         </header>
 
-        <section class="catalog-filter">
+        <section class="catalog-filters">
           <h2 class="visually-hidden">Форма выбора товара</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group sorting">
@@ -224,13 +225,15 @@
               </select>
             </fieldset>
             <fieldset class="catalog-filter-group price">
-              <legend class="catalog-filter-title">Цена: </legend>
+              <legend class="catalog-filter-title price-title">Цена: </legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="100" name="min-price"> ₽
+                  <input class="range-input" type="number" value="100" name="min-price">
+                  <span>₽ &ndash;</span>
                 </label>
                 <label class="catalog-filter-label">
-                  &ndash; <input class="range-input" type="number" value="500" name="max-price" style="width: 28px"> ₽
+                  <input class="range-input" type="number" value="500" name="max-price" style="width: 28px">
+                  <span>₽</span>
                 </label>
               </div>
               <div class="range">
@@ -258,8 +261,7 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="fat" value="to 10%" checked
-                      disabled>
+                    <input class="visually-hidden control-input" type="radio" name="fat" value="to 10%" checked>
                     <span class="control-mark-radio"></span>
                     <span class="control-label"> до 10% </span>
                   </label>
@@ -296,8 +298,7 @@
 
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="sugar-sprinkle" checked
-                      disabled>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="sugar-sprinkle" checked>
                     <span class="control-mark"></span>
                     <span> сахарные посыпки </span>
                   </label>
@@ -305,7 +306,7 @@
 
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="fruit" disabled>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="fruit">
                     <span class="control-mark"></span>
                     <span> фрукты </span>
                   </label>
