@@ -1887,9 +1887,13 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   margin-left: auto;
+  margin-right: -6px;
   padding: 0;
   list-style: none;
 }
