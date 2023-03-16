@@ -1143,6 +1143,7 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
 .appointment-form-address {
   grid-column: 1/-1;
 }
@@ -1463,6 +1464,7 @@ body {
   position: relative;
   padding-left: 0;
 }
+
 .breadcrumbs-item {
   position: relative;
 }
@@ -1525,6 +1527,7 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 16px;
 }
 
 /* Sorting */
@@ -1564,14 +1567,21 @@ body {
 /* Price */
 
 .price {
-  display: inline-block;
+  display: flex;
   margin-right: 24px;
   font-size: 14px;
   line-height: 20px;
+  flex-wrap: wrap;
+  width: 192px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  width: 103px;
 }
 
 .range {
-  width: 192px;
+  width: 198px;
   background-color: rgb(252, 252, 252, 0.3);
   border-radius: 20px;
   padding: 5px 0;
@@ -1646,12 +1656,17 @@ body {
 
 .range-input {
   width: 30px;
-  padding: 0 2px;
+  padding: 1px 2px;
   font: inherit;
   text-align: center;
   background-color: transparent;
   border: none;
   appearance: textfield;
+  height: 18px;
+}
+
+.catalog-filter-label {
+  display: flex;
 }
 
 .range-input::-webkit-outer-spin-button,
